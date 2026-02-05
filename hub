@@ -1,13 +1,8 @@
--- GMBT Hub — Booga Booga Reborn (full merged build + leash & BV failsafes)
--- UI: Fluent-Renewed  •  Автор: GMBT
-
--- ========= [ КЛЮЧЕВАЯ СИСТЕМА ] =========
 local CORRECT_KEYS = {
     "ERIK111",
     "WERDER111", 
     "pika123"
-} -- Поменяй ключи здесь
-
+}
 local function getKeyInput()
     local keyGui = Instance.new("ScreenGui")
     keyGui.Parent = game:GetService("CoreGui")
@@ -147,11 +142,9 @@ if not getKeyInput() then
     return
 end
 
--- ========= [ Fluent UI и менеджеры ] =========
 local Library = loadstring(game:HttpGetAsync("https://github.com/1dontgiveaf/Fluent-Renewed/releases/download/v1.0/Fluent.luau"))()
 local SaveManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/1dontgiveaf/Fluent-Renewed/refs/heads/main/Addons/SaveManager.luau"))()
 local InterfaceManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/1dontgiveaf/Fluent-Renewed/refs/heads/main/Addons/InterfaceManager.luau"))()
--- ========= [ Services / utils ] =========
 local HttpService       = game:GetService("HttpService")
 local Players           = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
